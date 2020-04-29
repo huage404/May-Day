@@ -1,12 +1,15 @@
 .container{
     background: #d04238;
-    height: 100vh;
+    height: 500vh;
     position: relative;
 }
+
+/* 首屏样式开始 */
+
 .container .theme{
     height: 13.34rem;
     width: 7.5rem;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 }
@@ -104,14 +107,142 @@
     top: 0;
     left: 0;
     pointer-events: none; /* 不可以被点击 */
+    z-index: 0;
 }
 .introduction{
     width: 7.24rem;
+    height: 4.44rem;
     position: absolute;
     bottom: 0.3rem;
+    background: url('../images/decorate/导语.png') no-repeat;
+    background-size: 100%;
     left: 50%;
     transform: translateX(-50%);
+    box-sizing: border-box;
+    padding-top: 0.5rem;
 }
+.introduction h1{
+    text-align: center;
+    font-size: 0.5rem;
+    color: rgba(209,67,58);
+}
+.introduction p{
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+}
+
+/* 首屏样式结束 */
+
+/* 产品模块样式 */
+
+.product{
+    width: 7.5rem;
+}
+
+.product:first-child h3{
+    height: 1.1rem;
+    display: block;
+    background: url('../images/decorate/标题.png') no-repeat;
+    background-position: center -0.27rem;
+    background-size: 100%;
+    margin-bottom: 0.2rem;
+}
+
+.product > div{
+    width: 6.37rem;
+    height: 3.14rem;
+    background: url('../images/decorate/产品背景.png') no-repeat;
+    background-size: 100%;
+    margin: 0.36rem auto;
+    box-sizing: border-box;
+    padding: 0.22rem 0.2rem 0.3rem 0.2rem;
+    position: relative;
+}
+.product > div::after{
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 1.25rem;
+    background: url('../images/decorate/优惠.png') no-repeat;
+    background-size: 100%;
+    
+}
+
+.product > div:nth-child(2n)::after{
+    position: absolute;
+    bottom: 0;
+    left: -0.2rem;
+}
+.product > div:nth-child(2n-1)::after{
+    position: absolute;
+    bottom: 0;
+    right: -0.2rem;
+}
+
+.links{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(-45deg,#fee4c1,#fff,#fee4c1);
+    box-sizing: border-box;
+    padding: 0.1rem;
+}
+
+.images{
+    width: 3.14rem;
+    height: 100%;
+    height: 100%;
+    display: block;
+}
+
+.info{
+    width: 2.4rem;
+    height: 100%;
+}
+
+.info p{
+    font-size: 0.18rem;
+    line-height: 0.38rem;
+}
+
+.name{
+    font-size: 0.24rem;
+    color: #9f162a;
+    font-weight: bold;
+    line-height: 0.5rem;
+}
+.price{
+    color: #fe4844;
+    font-weight: bold;
+    font-size: 0.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 动画组 */
 @keyframes waggle{
     0%{
         transform: scale(1);
