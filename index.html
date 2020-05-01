@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta name="description" content="“五一黄金周”，南昌各大售楼部新出购房优惠活动，南昌各大楼盘史无前例的优惠，然你购房无忧，购房最高立省几万元，心动不如行动！" />
+    <meta name="keywords" content="五一优惠,五一购房季,五一买房,五一优惠活动,南昌楼盘优惠" />
     <title>楼盘网劳动节专题</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -172,12 +174,24 @@
         </div>
     </div>
     <!-- bgm -->
-    <audio autoplay hidden id="video">
+    <!-- <audio autoplay hidden id="video">
         <source src="./music/bgm.mp3" type="audio/mp3" />
-    </audio>
+    </audio> -->
     <script src="./js/resetRem.js"></script>
     <script src="./js/data.js"></script>
     <script src="./js/index.js"></script>
+
+    <script>
+        window.onload = function () {
+            let url = window.location.href;
+            WechatSharePage.init({
+                title: '楼盘网劳动节专题',
+                desc: '“五一黄金周”，南昌各大售楼部新出购房优惠活动，南昌各大楼盘史无前例的优惠，然你购房无忧，购房最高立省几万元，心动不如行动！',
+                imgUrl: url + 'images/decorate/icon.png',
+                // imgUrl: './images/decorate/icon.png'
+            });
+        }
+    </script>
 </body>
 
 </html>

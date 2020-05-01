@@ -224,10 +224,11 @@
 .info{
     width: 2.4rem;
     height: 100%;
+    overflow: hidden;
 }
 
 .info p{
-    font-size: 0.18rem;
+    font-size: 0.2rem;
     line-height: 0.38rem;
 }
 
@@ -240,7 +241,7 @@
 .price{
     color: #fe4844;
     font-weight: bold;
-    font-size: 0.3rem;
+    font-size: 0.24rem;
 }
 
 
